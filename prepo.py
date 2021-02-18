@@ -14,7 +14,7 @@ import numpy as np
 import tqdm
 
 # Load data
-fpaths, _, _ = load_data() # list
+fpaths, _, _ = load_data(mode="train") # list
 
 for fpath in tqdm.tqdm(fpaths):
     fname, mel, mag = load_spectrograms(fpath)
